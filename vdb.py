@@ -146,7 +146,7 @@ def batch_upload(client : weaviate.WeaviateClient, collection_name, movies):
     except Exception as e:
         print(e)
         
-
+# Function imports 
 def load_data(client : weaviate.WeaviateClient, collection_name, data_file="./movies_10k.json"):
     # Placeholder for python dicts
     movies = []
@@ -181,15 +181,17 @@ def load_data(client : weaviate.WeaviateClient, collection_name, data_file="./mo
     # collection.data.insert_many(movies)
     batch_upload(client, collection_name, movies)
 
+# Function to print collection contents
 def print_collection_contents(collection):
     response = collection.query.fetch_objects(limit=4999)
     print("###########################")
-    print("THE ENTIRE DATASET:")
+    print("Dataset sample:")
     for o in response.objects:
         print(f"{o.properties}")
     print(f"Length of collection: {len(response.objects)}")
     print("###########################")
 
+# Creates a collection and uploads the data to the db
 def create_and_load_db(client: weaviate.WeaviateClient):
     try:
         # client = create_client()
