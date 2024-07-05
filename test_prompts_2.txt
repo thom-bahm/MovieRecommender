@@ -1,0 +1,85 @@
+User> what are some movies about plants
+Bot> I have just the thing you are looking for! Here are some movies about plants:
+
+<ul>
+    <li><strong>Little Shop of Horrors</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Comedy, Horror, Musical</li>
+        <li><strong>Main Cast:</strong> Rick Moranis, Ellen Greene, Vincent Gardenia, Levi Stubbs</li>
+        <li><strong>Director:</strong> Frank Oz</li>
+        <li><strong>Rating:</strong> UA</li>
+        <li><strong>Description:</strong> A nerdy florist finds his chance for success and romance with the help of a giant man-eating plant who demands to be fed.</li>
+        <li><strong>Duration:</strong> 94 minutes</li>
+        <li><strong>IMDb Rating:</strong> 7.1</li>
+        <li><strong>Metascore Rating:</strong> 81</li>
+        <li><strong>Year:</strong> 2008</li>
+    </ul>
+    Fun Fact: The plant in the movie, named Audrey II, became an iconic character in the film.
+</ul>
+
+<ul>
+    <li><strong>FernGully: The Last Rainforest</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Animation, Adventure, Family</li>
+        <li><strong>Main Cast:</strong> Samantha Mathis, Christian Slater, Robin Williams, Tim Curry</li>
+        <li><strong>Director:</strong> Bill Kroyer</li>
+        <li><strong>Rating:</strong> U</li>
+        <li><strong>Description:</strong> The magical inhabitants of a rainforest fight to save their home, which is threatened by logging and a polluting force of destruction called Hexxus.</li>
+        <li><strong>Duration:</strong> 76 minutes</li>
+        <li><strong>IMDb Rating:</strong> 6.5</li>
+        <li><strong>Metascore Rating:</strong> 67</li>
+        <li><strong>Year:</strong> 2000</li>
+    </ul>
+    Fun Fact: Robin Williams provided the voice for Batty Koda, a bat in the movie.
+</ul>
+User> What are some R-rated comedies?
+Bot> I have just the thing you are looking for! Here is an R-rated comedy movie suggestion:
+
+<ul>
+    <li><strong>Zack and Miri Make a Porno</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Comedy, Romance</li>
+        <li><strong>Main Cast:</strong> Seth Rogen, Elizabeth Banks, Craig Robinson, Gerry Bednob</li>
+        <li><strong>Director:</strong> Kevin Smith</li>
+        <li><strong>Rating:</strong> A</li>
+        <li><strong>Description:</strong> Lifelong platonic friends Zack and Miri look to solve their respective cash-flow problems by making an adult film together. As the cameras roll, however, the duo begin to sense that they may have more feelings for each other than they previously thought.</li>
+        <li><strong>Duration:</strong> 101 minutes</li>
+        <li><strong>IMDb Rating:</strong> 6.5</li>
+        <li><strong>Metascore Rating:</strong> 56</li>
+        <li><strong>Year:</strong> 2004</li>
+    </ul>
+</ul>
+User> what is a fun fact about that movie?
+Bot> I'm sorry, but I don't have any specific fun facts about that movie at the moment. If you have any other movie-related questions or need more movie suggestions, feel free to ask!
+User> Ok what if I want to watch a good action movie? Give me some suggestions.
+Bot> I have just the thing you are looking for! Here is an action movie suggestion for you:
+
+<ul>
+    <li><strong>Hidden Strike</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Action, Adventure, Comedy</li>
+        <li><strong>Main Cast:</strong> Jackie Chan, John Cena, Chunrui Ma, Wenli Jiang</li>
+        <li><strong>Director:</strong> Scott Waugh</li>
+        <li><strong>Description:</strong> Two ex-special forces soldiers must escort a group of civilians along Baghdad's "Highway of Death" to the safety of the Green Zone.</li>
+        <li><strong>Duration:</strong> 102 minutes</li>
+        <li><strong>IMDb Rating:</strong> 5.3</li>
+        <li><strong>Year:</strong> 2017</li>
+    </ul>
+</ul>
+User> Tell me about a movie that has a high Imdb rating.
+Bot> I have just the thing you are looking for! Here is a movie with a high IMDb rating:
+
+<ul>
+    <li><strong>Being John Malkovich</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Comedy, Drama, Fantasy</li>
+        <li><strong>Main Cast:</strong> John Cusack, Cameron Diaz, Catherine Keener, John Malkovich</li>
+        <li><strong>Director:</strong> Spike Jonze</li>
+        <li><strong>Rating:</strong> R</li>
+        <li><strong>Description:</strong> A puppeteer discovers a portal that leads literally into the head of movie star John Malkovich.</li>
+        <li><strong>Duration:</strong> 113 minutes</li>
+        <li><strong>IMDb Rating:</strong> 7.7</li>
+        <li><strong>Metascore Rating:</strong> 90</li>
+        <li><strong>Year:</strong> 2003</li>
+    </ul>
+</ul>

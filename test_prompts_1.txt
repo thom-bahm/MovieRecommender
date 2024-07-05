@@ -1,0 +1,82 @@
+User> Hello! Tell me about some movies that involve plants.
+Bot> I have just the thing you are looking for! Here are some movies that involve plants:
+
+<ul>
+    <li><strong>FernGully: The Last Rainforest</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Animation, Adventure, Family</li>
+        <li><strong>Main Cast:</strong> Samantha Mathis, Christian Slater, Robin Williams, Tim Curry</li>
+        <li><strong>Director:</strong> Bill Kroyer</li>
+        <li><strong>Rating:</strong> U</li>
+        <li><strong>Description:</strong> The magical inhabitants of a rainforest fight to save their home, which is threatened by logging and a polluting force of destruction called Hexxus.</li>
+        <li><strong>Duration:</strong> 76 minutes</li>
+        <li><strong>IMDb Rating:</strong> 6.5</li>
+        <li><strong>Metascore Rating:</strong> 67</li>
+        <li><strong>Year:</strong> 2000</li>
+    </ul>
+    <li><strong>Little Shop of Horrors</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Comedy, Horror, Musical</li>
+        <li><strong>Main Cast:</strong> Rick Moranis, Ellen Greene, Vincent Gardenia, Levi Stubbs</li>
+        <li><strong>Director:</strong> Frank Oz</li>
+        <li><strong>Rating:</strong> UA</li>
+        <li><strong>Description:</strong> A nerdy florist finds his chance for success and romance with the help of a giant man-eating plant who demands to be fed.</li>
+        <li><strong>Duration:</strong> 94 minutes</li>
+        <li><strong>IMDb Rating:</strong> 7.1</li>
+        <li><strong>Metascore Rating:</strong> 81</li>
+        <li><strong>Year:</strong> 2008</li>
+    </ul>
+</ul>
+
+Fun Fact: In "Little Shop of Horrors," the giant man-eating plant named Audrey II was operated by puppeteers and required multiple versions of the plant for different scenes.
+User> Tell me about a highly rated action movie
+Bot> I have just the highly rated action movie for you:
+
+<ul>
+    <li><strong>Shooter</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Action, Drama, Thriller</li>
+        <li><strong>Main Cast:</strong> Mark Wahlberg, Michael Peña, Rhona Mitra, Danny Glover</li>
+        <li><strong>Director:</strong> Antoine Fuqua</li>
+        <li><strong>Rating:</strong> A</li>
+        <li><strong>Description:</strong> A marksman living in exile is coaxed back into action after hearing of a plot to kill the President. After being double-crossed for the attempt and on the run, he sets out for the real killer and the truth.</li>
+        <li><strong>Duration:</strong> 124 minutes</li>
+        <li><strong>IMDb Rating:</strong> 7.1</li>
+        <li><strong>Metascore Rating:</strong> 53</li>
+        <li><strong>Year:</strong> 2018</li>
+    </ul>
+</ul>
+User> Tell me about a really highly rated action movie
+Bot> I have just the really highly rated action movie for you:
+
+<ul>
+    <li><strong>John Wick: Chapter 3 - Parabellum</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Action, Crime, Thriller</li>
+        <li><strong>Main Cast:</strong> Keanu Reeves, Halle Berry, Ian McShane, Laurence Fishburne</li>
+        <li><strong>Director:</strong> Chad Stahelski</li>
+        <li><strong>Rating:</strong> A</li>
+        <li><strong>Description:</strong> John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</li>
+        <li><strong>Duration:</strong> 130 minutes</li>
+        <li><strong>IMDb Rating:</strong> 7.4</li>
+        <li><strong>Metascore Rating:</strong> 73</li>
+        <li><strong>Year:</strong> 2005</li>
+    </ul>
+</ul>
+User> What is a movie with an Imdb rating of 8 or more?
+Bot> I have just the movie with an IMDb rating of 8 or more for you:
+
+<ul>
+    <li><strong>8MM</strong></li>
+    <ul>
+        <li><strong>Genre(s):</strong> Crime, Drama, Mystery</li>
+        <li><strong>Main Cast:</strong> Nicolas Cage, Joaquin Phoenix, James Gandolfini, Peter Stormare</li>
+        <li><strong>Director:</strong> Joel Schumacher</li>
+        <li><strong>Rating:</strong> R</li>
+        <li><strong>Description:</strong> A private investigator is hired to discover if a "snuff film" is authentic or not.</li>
+        <li><strong>Duration:</strong> 123 minutes</li>
+        <li><strong>IMDb Rating:</strong> 6.6</li>
+        <li><strong>Metascore Rating:</strong> 21</li>
+        <li><strong>Year:</strong> 2021</li>
+    </ul>
+</ul>
