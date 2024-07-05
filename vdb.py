@@ -132,7 +132,22 @@ def clean_float(value):
     except (ValueError, TypeError):
         return None
 
-def load_data(collection, data_file="./movies_medium.json"):
+# Using batch imports from weaviate to do a batch upload to handle larger sets of movie data
+def batch_upload(client : weaviate.WeaviateClient, collection_name, movies):
+    # client.batch.configure(batch_size)
+    try:
+        collection = client.collections.get(collection_name)
+        with collection.batch.dynamic() as batch:
+            for movie in movies:
+                batch.add_object(
+                    properties=movie,
+                )
+            batch.flush()
+    except Exception as e:
+        print(e)
+        
+
+def load_data(client : weaviate.WeaviateClient, collection_name, data_file="./movies_10k.json"):
     # Placeholder for python dicts
     movies = []
     # Load JSON data from file
@@ -163,25 +178,27 @@ def load_data(collection, data_file="./movies_medium.json"):
                 print(f"Error processing movie with ID {movie.get('ID')}: {e}")
     
     # Insert into the data set
-    collection.data.insert_many(movies)
+    # collection.data.insert_many(movies)
+    batch_upload(client, collection_name, movies)
 
 def print_collection_contents(collection):
     response = collection.query.fetch_objects(limit=4999)
     print("###########################")
     print("THE ENTIRE DATASET:")
-    # for o in response.objects:
-    #     print(f"{o.properties}")
+    for o in response.objects:
+        print(f"{o.properties}")
     print(f"Length of collection: {len(response.objects)}")
     print("###########################")
 
 def create_and_load_db(client: weaviate.WeaviateClient):
     try:
         # client = create_client()
-        movie_collection = drop_and_recreate_collection(client, "Movies")
-        load_data(movie_collection)
+        collection_name = "Movies"
+        movie_collection = drop_and_recreate_collection(client, collection_name)
+        load_data(client, collection_name)
 
         # Print the collection contents so we can see
-        print_collection_contents(movie_collection)
+        # print_collection_contents(movie_collection)
         print("Database preloaded successfully.")
         return movie_collection
     except Exception as e:
@@ -201,7 +218,6 @@ def create_and_load_db(client: weaviate.WeaviateClient):
 
 # QUERY RELATED CODE:
 
-
 def compare_prompt_and_vector(weav_client: weaviate.WeaviateClient, open_ai_client: OpenAI, user_prompt: str) -> list:
     """
     Compares the user's prompt with what is returned by the vector database, and decides if the result is on topic.
@@ -220,7 +236,6 @@ def compare_prompt_and_vector(weav_client: weaviate.WeaviateClient, open_ai_clie
     ok_vectors = []
 
     delimiter = "###"
-    
     # Compare each vector's content with the user prompt using the llm
     for vector in vectors:
         comparison_prompt = f"""

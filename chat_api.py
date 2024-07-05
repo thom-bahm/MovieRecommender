@@ -79,7 +79,7 @@ def prepare_prompt(prompt : str):
 
     return prep_prompt
 
-# Main function to 
+# Main function to process user input and get a completion from the chatbot.
 def collect_messages(client, message : str, vector_context, debug : bool = False) -> str:
     # Check if the prompt is safe 
     if not check_prompt_safe(message):
@@ -96,11 +96,11 @@ def collect_messages(client, message : str, vector_context, debug : bool = False
     response = get_msg_completion(client, chatbot_context, 0.05).choices[0].message.content
     # append the assistants response to the context
     chatbot_context.append({'role':'assistant', 'content':f'{response}'})
-    write_output_to_test(message, response, debug)
+    write_output_to_test(message, response, debug, 'test_prompts.txt')
     return response
 
-
-def write_output_to_test(user_prompt, bot_resopnse, debug: bool):
+# if debug is set to true, will write the output to a file
+def write_output_to_test(user_prompt, bot_resopnse, debug: bool, fn : str):
     if debug:
-        with open('test_prompts.txt', 'a') as file:
+        with open(fn, 'a') as file:
             file.write(f"User> {user_prompt}\nBot> {bot_resopnse}\n")

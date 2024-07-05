@@ -7,7 +7,7 @@ from vdb import *
 
 app = Flask(__name__)
 
-# Connect to the local client if it is running locally. if not, create the client
+# Connect to the local client if it is running locally. if not, create the client.
 # store the weav_client in the flask context so we can see if it is not there
 def get_weaviate_client():
     if 'weav_client' not in g:
@@ -21,15 +21,18 @@ def close_weaviate_client(exception):
     if weav_client is not None:
         weav_client.close()
 
+# Create database and uplaod movies if it doesn't exist
+def setup_database():
+    weav_client = connect_to_local() or create_client()
+    if not weav_client.collections.exists("Movies"):
+        create_and_load_db(weav_client)
+    weav_client.close()
 
 # Using flask to host a single page app
 @app.route('/', methods=['GET', 'POST'])
 def index():
     gpt_client = get_client()
     weav_client = get_weaviate_client()
-    # Create the DB if it does not exist
-    if not weav_client.collections.exists("Movies"):
-        create_and_load_db(weav_client)
     
     # The user submits the form (Sends a message/question)
     if request.method == 'POST':
@@ -39,9 +42,11 @@ def index():
         ok_vectors = compare_prompt_and_vector(weav_client, gpt_client, user_message)
         response = collect_messages(gpt_client, user_message, ok_vectors, debug=False)
         return jsonify({'user_message': user_message, 'api_response': response})
+        
     return render_template('index.html')
 
 if __name__ == '__main__':
+    setup_database()
     app.run(debug=True)
 
 
