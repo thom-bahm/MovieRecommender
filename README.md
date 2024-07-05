@@ -64,7 +64,6 @@ After this you should be able to run the main.py script and the flask app should
 
 You can interact with the chatbot on the flask app.
 
-
 Here is some sample output:
 
 ![flask app output screenshot](https://github.com/thom-bahm/MovieRecommender/blob/main/flaskapp_output_sc.png?raw=true)
@@ -73,3 +72,4 @@ Here is some sample output:
 For the above example, you can see in the console that the vector database is producing relevant results, and when not producing a relevant result the LLM will check it and respond with "no" (and of course, "yes" if it is satisfactory)
 
 ![Vector database output screenshot](https://github.com/thom-bahm/MovieRecommender/blob/main/vectordb_output_example.png?raw=true)
+
