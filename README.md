@@ -5,6 +5,8 @@ Our project is a Movie Recommender chatbot agent. The bot knows everything there
 
 Generally the ChatBot will output a list of movie suggestions that coincide with what the user queried.
 
+Used weaviate for the vector database, OpenAI (GPT-3.5) for LLM interactions, and flask to serve the app.
+
 ### Implementation Details
 
 The data we used to build our Vector Database was a set of 10,000 movies of an Imdb dataset which we got from (Kaggle)[https://www.kaggle.com/datasets/amanbarthwal/imdb-movies-data]. The input json objects include the following information:
@@ -61,3 +63,4 @@ To use this movie recommender agent you will have to clone this repository onto 
 After this you should be able to run the main.py script and the flask app should be started (the first time you run this, it will have to create the client, and importantly create and upload all movies to the vector database).
 
 You can interact with the chatbot on the flask app.
+
