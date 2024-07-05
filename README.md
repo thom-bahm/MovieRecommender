@@ -1,7 +1,7 @@
 # Movie Recommender ChatBot by Thomas Bahmandeji, Jackson Sanger
 
 ### Project Description
-Our project is a Movie Nerd Recommender chatbot agent. The bot knows everything there is to know about movies, and it is respectful and enthusiastic. If the user is not asking specific questions, the movie nerd will offer assistance.
+Our project is a Movie Recommender chatbot agent. The bot knows everything there is to know about movies, and it is respectful and enthusiastic. If the user is not asking specific questions, the movie nerd will offer assistance.
 
 Generally the ChatBot will output a list of movie suggestions that coincide with what the user queried.
 
