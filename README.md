@@ -19,7 +19,7 @@ The data we used to build our Vector Database was a set of 10,000 movies of an I
 * Cast: main actors in the movie.
 * Description: brief summary of the movie's plot.
 
-I implemented the upload of this dataset using dynamic batch upload to avoid timeouts and additionally increased upload speed.
+I implemented the upload of this dataset using dynamic batch upload to avoid timeouts and additionally to vastly increase upload speed.
 
 Moderation:
 - We used the OpenAI moderations API to ensure that user prompts were not harmful
@@ -43,7 +43,7 @@ Creating the vector database:
 - We used a function to drop and recreate the collection in the case that we made changes to the vector database and needed to re-create it.
 - Conditionally either accessed the already existing database if it existed or created the collection if not
 - Used descriptive property names to store things about the movie like the Imdb rating so that the vector database could accurately find near text when prompted by the user. 
-- Used dynamic batch upload
+- Used dynamic batch upload for quick and efficient data uploads
 
 Querying the database:
 - Used the near_text search operator to search our database with the users input as natural language, and set specific settings to ensure only relevant data was returned from the vector database (ie setting a minimum certainty of 0.7)
@@ -54,3 +54,10 @@ Cross-referencing our vector database results with our LLM:
 - We then only passed on the vector db results that got a 'yes' from the LLM to the main LLM query, where we provided the vector db results as a system role to the chatbot context, and instructed the LLM that these results may be useful, but are not binding.
 
 
+## Usage instructions
+
+To use this movie recommender agent you will have to clone this repository onto your machine. After doing so, make sure to export your openai api key to your environment. For mac, this looks like ```export OPENAI_API_KEY="<YOUR KEY HERE>"```
+
+After this you should be able to run the main.py script and the flask app should be started (the first time you run this, it will have to create the client, and importantly create and upload all movies to the vector database).
+
+You can interact with the chatbot on the flask app.
