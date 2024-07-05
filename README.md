@@ -1,5 +1,7 @@
 # Movie Recommender ChatBot by Thomas Bahmandeji, Jackson Sanger
 
+Started as a final project for COMP 4704 (LLM Applications) - expanded on to increase size of vector database.
+
 ### Project Description
 Our project is a Movie Recommender chatbot agent. The bot knows everything there is to know about movies, and it is respectful and enthusiastic. If the user is not asking specific questions, the movie nerd will offer assistance.
 
