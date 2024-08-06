@@ -11,7 +11,7 @@ Used weaviate for the vector database, OpenAI (GPT-3.5) for LLM interactions, an
 
 ### Implementation Details
 
-The data we used to build our Vector Database was a set of 10,000 movies of an Imdb dataset which we got from (Kaggle)[https://www.kaggle.com/datasets/amanbarthwal/imdb-movies-data]. The input json objects include the following information:
+The data we used to build our Vector Database was a set of 10,000 movies of an Imdb dataset which we got from [Kaggle](https://www.kaggle.com/datasets/amanbarthwal/imdb-movies-data). The input json objects include the following information:
 * Title: name of the movie.
 * Year: year the movie was released.
 * Rating: age rating given to the movie. 
